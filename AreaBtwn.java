@@ -35,6 +35,7 @@ public class AreaBtwn {
         g = 0;
         domain1 = 0;
         domain2 = 0;
+        slice = 0;
 
         area = 0;
         rect = 0;
