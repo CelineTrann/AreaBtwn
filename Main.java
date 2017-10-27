@@ -116,7 +116,7 @@ public class Main {
                     areaBtwn.setIteration(iteration);
 
                     //print out total area
-                    areaBtwn.calAreaBtw(m, b);
+                    areaBtwn.calcAreaBtw(m, b);
                     break;
 
                 //-----------------------------------------------------------------------------------------------
@@ -161,7 +161,7 @@ public class Main {
                     areaBtwn.setIteration(iteration);
 
                     //print out total area
-                    areaBtwn.calAreaBtw(a, b, c);
+                    areaBtwn.calcAreaBtw(a, b, c);
                     break;
 
                 //-----------------------------------------------------------------------------------------------
@@ -220,7 +220,7 @@ public class Main {
                     areaBtwn.setIteration(iteration);
 
                     //print out total area
-                    areaBtwn.calAreaBtw (f, a, k, c, d, rad);
+                    areaBtwn.calcAreaBtw (f, a, k, c, d, rad);
 
                     break;
 
@@ -293,7 +293,7 @@ public class Main {
                     }//closes if-else statement*/
 
                     //print out total area
-                    areaBtwn.calAreaBtw(f, a, k, c, d, rad);
+                    areaBtwn.calcAreaBtw(f, a, k, c, d, rad);
                     break;
 
                 //-----------------------------------------------------------------------------------------------
@@ -323,5 +323,6 @@ public class Main {
     }//close main method
 
 }//closes main class
+
 
 
