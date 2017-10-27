@@ -74,7 +74,7 @@ public class AreaBtwn {
 
     //Calculate Area of Under and Over Linear Slope
     //Variable from equation: y = mx + b
-    private double calAreaLinear (){
+    private double calcAreaLinear (){
 
         //reset area
         area = 0;
@@ -108,9 +108,9 @@ public class AreaBtwn {
     }//close calLinearArea Method
 
     //will be called in main class to set, calculate and display info
-    public double calAreaBtw (double m, double b){
+    public double calcAreaBtw (double m, double b){
         setLineData(m, b);
-        calAreaLinear();
+        calcAreaLinear();
         displayArea();
         return area;
     }
@@ -126,7 +126,7 @@ public class AreaBtwn {
 
     //Calculate Area Under Quadratic Slope
     //Variables for equation: y = a ( x - b )^2 + c
-    private double calAreaQuadratic (){
+    private double calcAreaQuadratic (){
         //reset area
         area = 0;
 
@@ -158,9 +158,9 @@ public class AreaBtwn {
     }//closes calAreaQuadratic method
 
     //will be called in main class to set, calculate and display info
-    public double calAreaBtw (double a, double h, double c){
+    public double calcAreaBtw (double a, double h, double c){
         setQuadraticData(a, h, c);
-        calAreaQuadratic();
+        calcAreaQuadratic();
         displayArea();
         return area;
     }
@@ -169,7 +169,7 @@ public class AreaBtwn {
     //set data for y = a(sin[k (x - d)]) + c
     private void setSinusoidalData (ABFunctions f, double a, double k, double c, double d, boolean degree){
         f1 = f;
-        a1 = a ;
+        a1 = a;
         k1= k;
         c1 = c;
         d1 = d;
@@ -187,7 +187,7 @@ public class AreaBtwn {
 
     //--------------------------------------------------------------
     //Calculate Area Under Sin Slope
-    private double calAreaSine (){
+    private double calcAreaSine (){
 
         //reset area
         area = 0;
@@ -220,7 +220,7 @@ public class AreaBtwn {
 
     //--------------------------------------------------------------
     //Calculate Area of Under and Over Slope
-    private double calAreaCosine (){
+    private double calcAreaCosine (){
 
         //reset area
         area = 0;
@@ -255,15 +255,15 @@ public class AreaBtwn {
 
     //--------------------------------------------------------------
     //will be called in main class to set, calculate and display info
-    public double calAreaBtw (ABFunctions f, double a, double k, double c, double d, boolean degree){
+    public double calcAreaBtw (ABFunctions f, double a, double k, double c, double d, boolean degree){
 
         setSinusoidalData(f, a, k, c, d, degree);
 
         if (f1 == ABFunctions.SINE) {
-            calAreaSine();
+            calcAreaSine();
 
         }else if (f1 == ABFunctions.COSINE){
-            calAreaCosine();
+            calcAreaCosine();
         }//close if-else statement
 
         displayArea();
