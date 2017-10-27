@@ -57,7 +57,7 @@ public class Main {
                     "1. Linear. \n" +
                     "2. Quadratic. \n" +
                     "3. Sine. \n" +
-                    "4. Cosine. \n");
+                    "4. Cosine.");
 
             //read user's choice
             choice = br.readLine();
