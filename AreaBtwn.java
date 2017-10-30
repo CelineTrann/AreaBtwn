@@ -258,8 +258,10 @@ public class AreaBtwn {
     //will be called in main class to set, calculate and display info
     public double calcAreaBtw (ABFunctions f, double a, double k, double c, double d, boolean degree){
 
+        //sets data for Trig functions
         setSinusoidalData(f, a, k, c, d, degree);
 
+        //
         if (f1 == ABFunctions.SINE) {
             calcAreaSine();
 
